@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sagar Adhikari — Business, Research, Perspective. Professional portfolio covering international business, finance, market research and management.">
+  <meta name="author" content="Sagar Adhikari">
+  <meta property="og:title" content="Sagar Adhikari | Business. Research. Perspective.">
+  <meta property="og:description" content="A professional portfolio exploring business, research and management.">
+  <meta property="og:type" content="website">
+  <title>Sagar Adhikari | Business. Research. Perspective.</title>
+  <style>
+    :root{--navy:#101d32;--navy2:#1a2b45;--gold:#c6a66a;--ink:#182235;--muted:#687386;--paper:#f7f8fa;--line:#e5e9ef}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(1080px,calc(100% - 44px));margin:auto}
+    header{background:var(--navy);color:#fff;min-height:620px;position:relative;overflow:hidden}
+    header:before{content:"";position:absolute;width:560px;height:560px;border:1px solid #ffffff18;border-radius:50%;right:-130px;top:-150px}
+    header:after{content:"";position:absolute;width:390px;height:390px;border:1px solid #ffffff18;border-radius:50%;right:-45px;top:-65px}
+    nav{height:82px;display:flex;align-items:center;justify-content:space-between;position:relative;z-index:1}
+    .brand{font-size:15px;letter-spacing:.12em;font-weight:750}.brand span{color:var(--gold)}
+    .navlinks{display:flex;gap:28px;font-size:13px;color:#d8dfeb}
+    .navlinks a:hover{color:var(--gold)}
+    .hero{position:relative;z-index:1;display:grid;grid-template-columns:1.5fr .7fr;gap:60px;align-items:center;padding:105px 0 115px}
+    .eyebrow{color:var(--gold);font-size:12px;font-weight:750;letter-spacing:.22em;text-transform:uppercase}
+    h1{font-size:clamp(46px,7vw,78px);line-height:1.04;letter-spacing:-.055em;margin:20px 0 14px}
+    .tagline{font-size:clamp(19px,2.4vw,25px);color:#d5dce7;font-weight:350;letter-spacing:.015em}
+    .intro{max-width:610px;color:#bdc8d7;font-size:16px;margin:25px 0 32px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{display:inline-flex;padding:12px 19px;border:1px solid #ffffff55;border-radius:3px;font-size:13px;font-weight:650}
+    .btn.primary{background:var(--gold);border-color:var(--gold);color:#172235}
+    .monogram{width:210px;height:210px;border:1px solid #ffffff3b;border-radius:50%;display:grid;place-items:center;margin:auto;color:var(--gold);font-size:52px;font-weight:300;letter-spacing:-.06em;position:relative}
+    .monogram:before{content:"";position:absolute;inset:13px;border:1px solid #ffffff22;border-radius:50%}
+    section{padding:88px 0}
+    .section-kicker{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#9a7a43;font-weight:800}
+    h2{font-size:clamp(30px,4vw,43px);line-height:1.15;letter-spacing:-.04em;margin:10px 0 25px;color:var(--navy)}
+    .lead{font-size:18px;color:#465267;max-width:800px}
+    .about-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:65px;align-items:start}
+    .note{border-left:2px solid var(--gold);padding:5px 0 5px 22px;color:var(--muted);font-size:14px}
+    .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:35px}
+    .card{background:#fff;border:1px solid var(--line);padding:27px;border-radius:5px}
+    .card .label{font-size:11px;text-transform:uppercase;letter-spacing:.16em;color:#9a7a43;font-weight:800}
+    .card h3{margin:10px 0 7px;font-size:19px;color:var(--navy)}
+    .card p{margin:0;color:var(--muted);font-size:14px}
+    .timeline{margin-top:32px;border-top:1px solid var(--line)}
+    .entry{display:grid;grid-template-columns:190px 1fr;gap:25px;padding:25px 0;border-bottom:1px solid var(--line)}
+    .entry .when{font-size:13px;color:var(--muted)}
+    .entry h3{margin:0 0 5px;color:var(--navy);font-size:18px}
+    .entry p{margin:0;color:var(--muted);font-size:14px}
+    .skills{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+    .chip{border:1px solid #dce2e9;background:#fff;padding:9px 13px;border-radius:2px;font-size:13px;color:#39465a}
+    .research{background:var(--navy);color:#fff}
+    .research h2{color:#fff}.research .section-kicker{color:var(--gold)}
+    .research-box{border:1px solid #ffffff28;padding:30px;margin-top:28px;max-width:800px}
+    .research-box h3{font-size:23px;line-height:1.35;margin:0 0 10px}
+    .research-box p{color:#c3cedd;margin:0;font-size:14px}
+    .contact{background:#fff}
+    .contact-row{display:flex;align-items:center;justify-content:space-between;gap:25px;flex-wrap:wrap}
+    footer{background:#0b1525;color:#9ca9bb;padding:25px 0;font-size:12px}
+    footer .wrap{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    @media(max-width:720px){
+      .navlinks{gap:13px;font-size:11px}.hero{grid-template-columns:1fr;padding:75px 0 85px;gap:45px}
+      .monogram{width:150px;height:150px;font-size:40px}.about-grid{grid-template-columns:1fr;gap:25px}
+      .cards{grid-template-columns:1fr}.entry{grid-template-columns:1fr;gap:5px}section{padding:65px 0}
+    }
+    @media(max-width:420px){.navlinks a:nth-child(2){display:none}.wrap{width:min(100% - 32px,1080px)}}
+  </style>
+</head>
+<body>
+<header id="top">
+  <div class="wrap">
+    <nav>
+      <a class="brand" href="#top">SAGAR <span>ADHIKARI</span></a>
+      <div class="navlinks"><a href="#about">About</a><a href="#education">Education</a><a href="#research">Research</a><a href="#contact">Contact</a></div>
+    </nav>
+    <div class="hero">
+      <div>
+        <div class="eyebrow">Personal professional portfolio</div>
+        <h1>Sagar<br>Adhikari</h1>
+        <div class="tagline">Business. Research. Perspective.</div>
+        <p class="intro">An academic and professional background shaped by international business, finance, market research and hands-on management experience.</p>
+        <div class="actions">
+          <a class="btn primary" href="#about">Explore my profile</a>
+          <a class="btn" href="https://www.linkedin.com/in/sagar-adhikari-2a87a138b/" target="_blank" rel="noopener">Connect on LinkedIn ↗</a>
+        </div>
+      </div>
+      <div class="monogram" aria-label="SA monogram">SA</div>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="about">
+  <div class="wrap about-grid">
+    <div>
+      <div class="section-kicker">01 / About</div>
+      <h2>A perspective built across business, study and practice.</h2>
+      <p class="lead">I am interested in how businesses understand people, make decisions and create value. My academic path in finance and international business, together with experience in banking and retail operations, has shaped a practical interest in management, markets and consumer behaviour.</p>
+      <p>My focus is on connecting structured analysis with real-world business challenges — from understanding customers to improving day-to-day operations.</p>
+    </div>
+    <aside class="note">This portfolio is an evolving record of my education, professional experience, research interests and ideas. I use this space to share thoughtful perspectives on business and management.</aside>
+  </div>
+</section>
+
+<section id="education" style="background:#eef1f5">
+  <div class="wrap">
+    <div class="section-kicker">02 / Education</div>
+    <h2>Academic background</h2>
+    <div class="cards">
+      <article class="card"><div class="label">2020</div><h3>MS in International Business</h3><p>Lincoln University, Oakland, California, USA</p></article>
+      <article class="card"><div class="label">2018</div><h3>MBA in Finance</h3><p>Graduate-level study focused on finance and business management.</p></article>
+      <article class="card"><div class="label">Undergraduate</div><h3>Bachelor of Business Administration</h3><p>Lord Buddha Education Foundation, Nepal</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <div class="section-kicker">03 / Experience</div>
+    <h2>Professional experience</h2>
+    <div class="timeline">
+      <div class="entry"><div class="when">Banking</div><div><h3>Nepal Investment Mega Bank</h3><p>Banking experience in Nepal. Role title, dates and responsibilities can be added once confirmed.</p></div></div>
+      <div class="entry"><div class="when">United States</div><div><h3>Retail Store Management</h3><p>Management experience in liquor and grocery retail, including store operations and day-to-day business responsibilities. Specific employer names and dates can be added.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="research" class="research">
+  <div class="wrap">
+    <div class="section-kicker">04 / Research</div>
+    <h2>Curiosity about consumers and markets.</h2>
+    <div class="research-box">
+      <div class="eyebrow">Undergraduate research · 2014</div>
+      <h3>Consumer Behavior Towards Online Shopping in Kathmandu Valley</h3>
+      <p>A research project exploring consumer behaviour in the context of online shopping in Kathmandu Valley. The project reflects an early interest in digital commerce, customer decision-making and market research.</p>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="section-kicker">05 / Areas of interest</div>
+    <h2>Skills &amp; interests</h2>
+    <div class="skills">
+      <span class="chip">International Business</span><span class="chip">Finance</span><span class="chip">Consumer Behaviour</span><span class="chip">Market Research</span><span class="chip">Business Research</span><span class="chip">Research &amp; Analysis</span><span class="chip">E-commerce</span><span class="chip">Retail Operations</span><span class="chip">Store Management</span><span class="chip">Market Analysis</span>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap contact-row">
+    <div><div class="section-kicker">06 / Connect</div><h2 style="margin-bottom:8px">Let's connect.</h2><p style="margin:0;color:#687386">For professional conversations, ideas and collaboration.</p></div>
+    <a class="btn primary" href="https://www.linkedin.com/in/sagar-adhikari-2a87a138b/" target="_blank" rel="noopener">View LinkedIn profile ↗</a>
+  </div>
+</section>
+</main>
+<footer><div class="wrap"><span>© <span id="year">2026</span> Sagar Adhikari</span><span>Business. Research. Perspective.</span></div></footer>
+</body>
+</html>
